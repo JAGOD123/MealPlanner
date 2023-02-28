@@ -1,7 +1,13 @@
 import recipe
 import UserInterface as UI
 
-UI.run()
-recipe.new_Recipe()
+# UI.run()
+
+#recipe.new_Recipe("Super smoky bacon & tomato spaghetti", recipe.ingredients_reader("spaghetti,400,g/olive oil,1,tbsp/smoked streaky bacon,120,g/onion,1,each/garlic clove,1,each/Paprika,2,tsp/chopped tomatoes,2x400,g"),"STEP 1/nBring a large pan of water to the boil and cook the spaghetti following pack instructions. Meanwhile, heat the oil in a large non-stick frying pan and cook the bacon for 3-4 mins until just starting to crisp. Stir in the onion and cook for another 3-4 mins, then add the garlic and smoked paprika, and cook for 1 min more./n/nSTEP 2/nPour in the chopped tomatoes, bring to the boil and bubble for about 5 mins until thickened, stirring every so often to stop it catching on the bottom. Drain the pasta and toss with the sauce. Serve with Parmesan, if you like.","https://www.bbcgoodfood.com/recipes/super-smoky-bacon-tomato-spaghetti")
+
+recipe.new_Recipe("Roasted tomato, basil & parmesan quiche","cherry tomatoes,300,g/olive oil,1,tsp/eggs,2,each/double cream,284,ml/basil leaves,handful,each/plain flour,280,g/cold butter,140,g","STEP 1\nTo make the pastry, tip the flour and butter into a bowl, then rub together with your fingertips until completely mixed and crumbly. Add 8 tbsp cold water, then bring everything together with your hands until just combined. Roll into a ball and use straight away or chill for up to 2 days. The pastry can also be frozen for up to a month.\n\nSTEP 2\nRoll out the pastry on a lightly floured surface to a round about 5cm larger than a 25cm tin. Use your rolling pin to lift it up, then drape over the tart case so there is an overhang of pastry on the sides. Using a small ball of pastry scraps, push the pastry into the corners of the tin. Chill in the fridge or freezer for 20 mins. Heat oven to 200C/fan 180C/gas 6.\n\nSTEP 3\nIn a small roasting tin, drizzle the tomatoes with olive oil and season with salt and pepper. Put the tomatoes in a low shelf of the oven.\n\nSTEP 4\nLightly prick the base of the tart with a fork, line the tart case with a large circle of greaseproof paper or foil, then fill with baking beans. Blind-bake the tart for 20 mins, remove the paper and beans, then continue to cook for 5-10 mins until biscuit brown.\n\nSTEP 5\nWhen you remove the tart case from the oven, take out the tomatoes, too.\n\nSTEP 6\nWhile the tart is cooking, beat the eggs in a large bowl. Gradually add the cream, then stir in the basil and season. When the case is ready, sprinkle half the cheese over the base, scatter over the tomatoes, pour over the cream mix, then finally scatter over the rest of the cheese. Bake for 20-25 mins until set and golden brown. Leave to cool in the case, trim the edges of the pastry, then remove from the tin. Scatter over the remaining basil and serve in slices.","https://www.bbcgoodfood.com/recipes/roasted-tomato-basil-parmesan-quiche")
+
+
 
 recipe.read_Recipe(1)
+
