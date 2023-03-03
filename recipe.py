@@ -14,8 +14,6 @@ def new_Recipe(name, ingredients, method, link=None):
     '''
     Need to check if the file already exists, use name remove white space
     '''
-
-
     recipe_Dict = {
         "id":set_Recipe_ID(),
         "name":name,
