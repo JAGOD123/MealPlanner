@@ -10,11 +10,8 @@ class MyFrame(wx.Frame):
         self.text_ctrl2 = wx.TextCtrl(panel)
         self.text_ctrl3 = wx.TextCtrl(panel)
         self.text_ctrl4 = wx.TextCtrl(panel)
-        my_sizer.AddMany([
-            (self.text_ctrl, 0, wx.ALL | wx.EXPAND, 5),
-            (self.text_ctrl2, 0, wx.ALL | wx.EXPAND, 5),
-            (self.text_ctrl3, 0, wx.ALL | wx.EXPAND, 5),
-            (self.text_ctrl4, 0, wx.ALL | wx.EXPAND, 5)])        
+        my_sizer.AddMany([(self.text_ctrl, 0, wx.ALL | wx.EXPAND, 5), (self.text_ctrl2, 0, wx.ALL | wx.EXPAND, 5),(self.text_ctrl3, 0, wx.ALL | wx.EXPAND, 5),(self.text_ctrl4, 0, wx.ALL | wx.EXPAND, 5)]) 
+               
         my_btn = wx.Button(panel, label='submit')
         my_btn.Bind(wx.EVT_BUTTON, self.on_press)
         my_sizer.Add(my_btn, 0, wx.ALL | wx.CENTER, 5)        
@@ -32,6 +29,7 @@ class MyFrame(wx.Frame):
             # no val
             print("Required")
         else:
+            print(id, name, ingredients, method)
             recipe.new_Recipe(id, name, ingredients, method, link="google.com")
 
 
